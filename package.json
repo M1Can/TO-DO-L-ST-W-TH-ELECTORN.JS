@@ -1,0 +1,33 @@
+{
+  "name": "m.c-list.mc",
+  "productName": "NOTLAR | m.c",
+  "version": "1.1.0",
+  "description": "not tut",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "author": "MURAT CAN KÖKKAYA",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "electron": "^12.0.9",
+    "electron-builder": "^22.10.5",
+    "electron-packager": "^15.2.0"
+  },
+  "build": {
+    "appId": "com.MC.app",
+    "win": {
+      "icon": "./ayrıntılar/ikon/icon.ico"
+    },
+    "mac": {
+      "category": "your.app.category.type"
+    }
+  },
+  "postinstall": "electron-builder install-app-deps"
+}
